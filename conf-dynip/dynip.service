@@ -1,0 +1,10 @@
+[Unit]
+Description=Update IP Service
+
+[Service]
+ExecStart=/bin/bash /usr/local/bin/dynip.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
